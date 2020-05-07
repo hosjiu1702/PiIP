@@ -1,5 +1,7 @@
 # PiIP
-Find your headless Raspberry Pi IP address. 
+Find your headless Raspberry Pi IP address.
+
+It uses [paramiko](http://www.paramiko.org/) and `arp` command in behind.
 
 ## Prerequisite
 __Python 3.6__
