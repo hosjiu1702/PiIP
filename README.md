@@ -6,10 +6,9 @@ __Python 3.6__
 
 ## How to use
 
-`
-pip install -r requirements.txt
-
-python ssh_script.py 
-`
+```
+1. pip install -r requirements.txt
+2. python ssh_script.py 
+```
 
 Voila !! (Your IP address will appear in a magic manner :) )
