@@ -21,7 +21,7 @@
 ? (192.168.19.18) at 30:9c:23:e6:80:f1 [ether] on eno1
 ? (10.42.0.136) at <incomplete> on wlx503eaa9df1a9
 ? (192.168.19.21) at 0c:4d:e9:a7:18:98 [ether] on eno1
-? (10.42.0.170) at <incomplete> on wlx503eaa9df1a9
+? (10.42.0.170) at 20:39:56:89:1f:c2 [ether] on wlx503eaa9df1a9
 ? (192.168.19.95) at 4c:cc:6a:6b:19:83 [ether] on eno1
 ? (192.168.19.66) at d8:cb:8a:c5:05:89 [ether] on eno1
 ? (192.168.19.27) at 98:29:a6:49:88:5e [ether] on eno1
