@@ -5,9 +5,10 @@ Find your headless Raspberry Pi IP address.
 __Python 3.6__
 
 ## How to use
-`
+
+```
 1. pip install -r requirements.txt
 2. python ssh_script.py 
-`
+```
 
 Voila !! (Your IP address will appear in a magic manner :) )
