@@ -37,7 +37,7 @@ if __name__ == '__main__':
                     for raw_ip in ALL_IPs:
                         print(f"current IP: {raw_ip}")
                         try:
-                            ssh_client.connect(hostname=raw_ip, username='pi', password='Badien123', timeout=5.)
+                            ssh_client.connect(hostname=raw_ip, username='pi', password='Badien123')
                             print(f"Your Raspberry Pi IP address is: {raw_ip}")
                             break
                         except paramiko.ssh_exception.NoValidConnectionsError:
