@@ -36,14 +36,16 @@ def main():
 
                     # Loop over each of IP address in the IP addresses above
                     try:
-                        ssh_client.connect(hostname=raw_ip, username='pi', password='Badien123')
-                        print(f"Your Raspberry Pi IP address is: {raw_ip}")
+                        ssh_client.connect(hostname=ip, username='pi', password='Badien123')
+                        print(f"Your Raspberry Pi IP address is: {ip}")
                         print("----\nDONE.")
                         return
                     except paramiko.ssh_exception.NoValidConnectionsError:
                         continue
                     except paramiko.ssh_exception.AuthenticationException:
                         continue
+
+    print('Please re-check your Raspberry Pi connection (e.g: Power, Network cable, Wifi connection, ..)')
 
 
 if __name__ == '__main__':
