@@ -27,12 +27,10 @@ if __name__ == '__main__':
             elif subnet_list[-1] == '8':
                 subnet_list[1] = subnet_list[2] = subnet_list[3] = '0'
             subnet = '.'.join(subnet_list[:-1]) + '/{}'.format(subnet_list[-1])
-            print(subnet)
 
             os.system("sudo netdiscover -r {} -P | grep Pi | awk '{}' > ip_tmp{}.txt".format(subnet, '{print $1}', idx+1))
             with open('ip_tmp{}.txt'.format(idx+1), 'r') as IPs_list:
                 for ip in IPs_list:
-                    print(ip) # sanity check
                     ssh_client = paramiko.client.SSHClient()
                     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
                     # Loop over each of IP address in the IP addresses above
