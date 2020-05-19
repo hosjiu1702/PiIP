@@ -3,7 +3,7 @@ import os
 import paramiko
 
 
-if __name__ == '__main__':
+def main():
     print('Scanning all available IP addresses in your network ...')
     os.system(r"ip a | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}\b' | grep -v '^127' > subnets.txt")
     
@@ -39,9 +39,13 @@ if __name__ == '__main__':
                         try:
                             ssh_client.connect(hostname=raw_ip, username='pi', password='Badien123')
                             print(f"Your Raspberry Pi IP address is: {raw_ip}")
-                            break
+                            print("----\nDONE.")
+                            return
                         except paramiko.ssh_exception.NoValidConnectionsError:
                             continue
                         except paramiko.ssh_exception.AuthenticationException:
                             continue
-                    print("----\nDONE.")
+
+
+if __name__ == '__main__':
+    main()
