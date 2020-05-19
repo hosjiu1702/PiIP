@@ -1,6 +1,7 @@
 import os
 
 import paramiko
+from paramiko.exception import NoValidConnectionsError, AuthenticationException
 
 
 def main():
@@ -40,9 +41,9 @@ def main():
                         print(f"Your Raspberry Pi IP address is: {ip}")
                         print("----\nDONE.")
                         return
-                    except paramiko.ssh_exception.NoValidConnectionsError:
+                    except NoValidConnectionsError:
                         continue
-                    except paramiko.ssh_exception.AuthenticationException:
+                    except AuthenticationException:
                         continue
 
     print('Please re-check your Raspberry Pi connection (e.g: Power, Network cable, Wifi connection, ..)')
