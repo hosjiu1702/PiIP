@@ -15,12 +15,11 @@ __Python 3.6+__
 `sudo apt install netdiscover`
 - Install [paramiko](http://www.paramiko.org/) in your favorite virtual enviroment and then install it with **pip** or your favorite package manager.
 ```
-1. pip install -r requirements.txt
-2. python ssh_script.py 
+pip install -r requirements.txt
 ```
 
 ## Usage
-`python ssh_script --username {your unix account to log in} --password {Your password}`
+`python scan --username {your unix account to log in} --password {Your password}`
 
 Voila !! (Your IP address will appear in a magic manner :) )
 
