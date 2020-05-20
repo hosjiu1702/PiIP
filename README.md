@@ -12,7 +12,9 @@ __Python 3.6+__
 
 - Install [netdiscover](http://manpages.ubuntu.com/manpages/bionic/man8/netdiscover.8.html) if you do not have it on your system.
 
-`sudo apt install netdiscover`
+```
+sudo apt install netdiscover
+```
 - Install [paramiko](http://www.paramiko.org/) in your favorite virtual enviroment and then install it with **pip** or your favorite package manager.
 ```
 pip install -r requirements.txt
