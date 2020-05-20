@@ -23,11 +23,7 @@ __Python 3.6+__
 Voila !! (Your IP address will appear in a magic manner :) )
 
 ## Acknowledgement
-Paramiko's Authors
-
-Netdiscover's Authros
-
-for creating very usefull tools
+Paramiko's Authors | Netdiscover's Authros for creating very usefull tools
 
 Thanks to [linhdb-2149](https://github.com/linhdb-2149) for first testing and using my tool :)
 
