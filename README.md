@@ -6,7 +6,7 @@ Find your *headless* Raspberry Pi __IP address__ (_for lazy people_).
 * It uses [paramiko](http://www.paramiko.org/) and [netdiscover](http://manpages.ubuntu.com/manpages/bionic/man8/netdiscover.8.html) command behind the scene.
 
 ## Prerequisite
-__Python 3.6+__
+Python 3.6 or later
 
 ## Dependencies
 
