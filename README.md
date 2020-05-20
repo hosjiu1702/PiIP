@@ -29,5 +29,5 @@ Netdiscover's Authros
 
 for creating very usefull tools
 
-Thanks to @linhdb-2149 for first testing and using my tool :)
-Thanks to @com0t for his support. This mini project will not be true without his help.
+Thanks to [linhdb-2149](https://github.com/linhdb-2149) for first testing and using my tool :)
+Thanks to [com0t](https://github.com/com0t) for his support. This mini project will not be true without his help.
