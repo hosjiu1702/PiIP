@@ -46,7 +46,7 @@ def main(username, password):
 
                     # Loop over each of IP address in the IP addresses above
                     try:
-                        ssh_client.connect(hostname=ip, username='pi', password='Badien123')
+                        ssh_client.connect(hostname=ip, username=username, password=password)
                         print(f"Your Raspberry Pi IP address is: {ip}")
                         return
                     except NoValidConnectionsError:
