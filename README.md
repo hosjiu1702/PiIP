@@ -20,6 +20,8 @@ __Python 3.6+__
 ## Usage
 `python ssh_script --username {your unix account to log in} --password {Your password}`
 
+Voila !! (Your IP address will appear in a magic manner :) )
+
 ## Acknowledgement
 Paramiko's Authors
 
@@ -28,7 +30,3 @@ Netdiscover's Authros
 for creating very usefull tools
 
 Thanks @linhdb-2149 for first testing and using my tool :)
-
-___
-
-Voila !! (Your IP address will appear in a magic manner :) )
