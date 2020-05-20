@@ -1,9 +1,9 @@
 # PiIP
 Find your headless Raspberry Pi IP address (_for lazy people_).
 
-You just need provide _username_ and _password_.
+* You just need provide _username_ and _password_.
 
-It uses [paramiko](http://www.paramiko.org/) and [netdiscover](http://manpages.ubuntu.com/manpages/bionic/man8/netdiscover.8.html) command behind the scene.
+* It uses [paramiko](http://www.paramiko.org/) and [netdiscover](http://manpages.ubuntu.com/manpages/bionic/man8/netdiscover.8.html) command behind the scene.
 
 ## Prerequisite
 __Python 3.6+__
@@ -21,7 +21,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-`python scan --username {your unix account to log in} --password {Your password}`
+```
+python scan --username {your unix account to log in} --password {Your password}
+```
 
 Voila !! (Your IP address will appear in a magic manner :) )
 
