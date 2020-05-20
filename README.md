@@ -1,5 +1,5 @@
 # PiIP
-Find your headless Raspberry Pi IP address (_for lazy people_).
+Find your *headless* Raspberry Pi __IP address__ (_for lazy people_).
 
 * You just need provide _username_ and _password_.
 
