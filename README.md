@@ -18,6 +18,6 @@ __Python 3.6+__
 ```
 
 ## Usage
-
+`python ssh_script --username {your unix account to log in} --password {Your password}`
 
 Voila !! (Your IP address will appear in a magic manner :) )
