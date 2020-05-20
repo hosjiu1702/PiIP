@@ -1,15 +1,24 @@
 import os
+import argparse
 
 import paramiko
-from paramiko.exception import NoValidConnectionsError, AuthenticationException
+from paramiko.ssh_exception import NoValidConnectionsError, AuthenticationException
 
 
-def main():
-    print('Scanning all available IP addresses in your network ...')
+def main(username, password):
+    print('Finding subnetwork ...')
+    # print('Scanning all available subnets in your network ...')
     os.system(r"ip a | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}\b' | grep -v '^127' > subnets.txt")
     
-    # Scan IPs over all possible subnetwork
-    with open('subnets.txt', 'r') as subnets:
+    with open('subnets.txt', 'r') as subnets_file:
+        subnets = list()
+        # Show scanned subnetworks in your network.
+        print('-------------- SCANNED SUBNETWORKS -------------\n')
+        for subnet in subnets_file:
+            print(f"\t\t{subnet}")
+            subnets.append(subnet)
+
+        print('BE SCANNING ...\n')
         for idx, raw_subnet in enumerate(subnets):
             # correct the current subnet string by remove '\n'
             subnet = raw_subnet[:-1]
@@ -39,7 +48,6 @@ def main():
                     try:
                         ssh_client.connect(hostname=ip, username='pi', password='Badien123')
                         print(f"Your Raspberry Pi IP address is: {ip}")
-                        print("----\nDONE.")
                         return
                     except NoValidConnectionsError:
                         continue
@@ -50,4 +58,10 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description='Scan headless Raspberry Pi IP in your massive network.')
+    
+    parser.add_argument('-u', '--username', type=str, required=True,  help='Unix account you want to log in')
+    parser.add_argument('-p', '--password', type=str, required=True, help='Password for logging')
+    
+    args = parser.parse_args()
+    main(args.username, args.password)
