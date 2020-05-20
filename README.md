@@ -1,4 +1,8 @@
 # PiIP
+![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
+![Python 3.7](https://img.shields.io/badge/python-v3.7-blue)
+![license MIT](https://img.shields.io/badge/license-MIT-green)
+
 Find your *headless* Raspberry Pi __IP address__ (_for lazy people_).
 
 * You just need provide _username_ and _password_.
